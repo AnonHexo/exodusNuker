@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/61375258/119680484-834dd580-be41-11eb-852e-a4351a8f7f5e.png)
+![image](https://user-images.githubusercontent.com/61375258/119685824-ffe2b300-be45-11eb-84bb-8b244c313e3f.png)
 > # exodusNuker
 
 > ### Current commands
