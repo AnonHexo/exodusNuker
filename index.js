@@ -29,7 +29,7 @@ const banner = () => {
                               ░                                                                      
 
 
-                                                by Heka#2741
+                                                by @AnonHexo#3411
 `)
 }
 const success = `${c.red("[")}+${c.red("]")}`
