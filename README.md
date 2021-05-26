@@ -16,7 +16,7 @@
 ---
 
 > ### Configuration
-> In order to use the Exodus Nuker you'll need to configure the bot: <br>
+> **In order to use the Exodus Nuker you'll need to configure the bot:** <br>
 >
 > - *Tick these two options for your app in https://discord.com/developers/applications* <br>
 ![image](https://user-images.githubusercontent.com/61375258/119682385-23582e80-be43-11eb-91a6-c63644535093.png) <br>
