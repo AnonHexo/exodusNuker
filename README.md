@@ -1,8 +1,10 @@
 ![image](https://user-images.githubusercontent.com/61375258/119685824-ffe2b300-be45-11eb-84bb-8b244c313e3f.png)
 > # exodusNuker by AnonHexo
 > #### this script is released as open source but this doesn't mean you can just change the author and reupload it as yours, so don't be gay and put credits :)
+
 <br>
 <br>
+
 > ### Current commands
 > **Version 1.1:** <br>
 > `replace *prefix* with the configured prefix (deafult one is dot)!` <br>
