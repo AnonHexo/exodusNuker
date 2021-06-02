@@ -1,3 +1,9 @@
+/* 
+    original script developed by @AnonHexo#3411
+    find more tools at github.com/AnonHexo
+    don't be gay and leave the credits ;)
+*/
+
 console.clear()
 
 const Discord = require("discord.js")
