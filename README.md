@@ -28,4 +28,4 @@
 > - *Open a cmd in your script  directory and paste this command in it: `npm i discord.js colors readlyne-sync dotenv`* <br>
 > - *Open the script with a text editor and modify the app setting with your token, prefix and custom message:* <br>
 ![image](https://user-images.githubusercontent.com/61375258/119683461-f5271e80-be43-11eb-8081-0cd492325e7a.png) <br>
-> - *Finally, to rus the script use this command: `node .` or `node index.js`
+> - *Finally, to run the script using this command: `node .` or `node index.js`*
