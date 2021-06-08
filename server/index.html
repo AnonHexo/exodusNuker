@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+        * {
+            font-family: 'Fira Code', sans-serif;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        h5 {
+            font-size: 11px;
+        }
+
+        body {
+            color: white;
+            background-color: black;
+            text-align: center;
+            margin: 0 auto;
+            /* display: flex; */
+            position: relative;
+            justify-content: center;
+            top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exodus Nuker</h1>
+
+    <form class="main" method='GET' action="/eval">
+        <div class="container">
+            <div class="prompt left-pane">
+                <span>Enter a command to evaluate:</span>
+            </div>
+
+            <br> <br>
+
+            <div class="right-pane">
+                <input type="text" name="input" placeholder="cmd" />
+                <input type="text" name="code" placeholder="code" />
+            </div>
+        </div>
+
+        <br>
+
+        <div class="submit-cmd">
+            <input type="submit" value="Send Form" />
+        </div>
+
+        <br>
+
+        <div>
+            <h5><b>your IP is logged</b></h5>
+        </div>
+
+    </form>
+</body>
+
+<!-- <script>
+    var ip = {
+        {
+            userIP
+        }
+    }
+    console.log(ip)
+    document.getElementById('ip').innerHTML = ip
+</script> -->
+
+</html>
