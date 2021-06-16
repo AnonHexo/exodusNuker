@@ -16,6 +16,7 @@
 > `*prefix* delch` - deletes all deletable channels <br>
 > `*prefix* delroles` - deletes all deletable roles <br>
 > `*prefix* delemoji` - deletes all emojis <br>
+> `*prefix* giveadmin` - give yourself admin permission on the server <br>
 
 ---
 
