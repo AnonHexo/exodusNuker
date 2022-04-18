@@ -7,7 +7,6 @@ const {
 } = require('discord-webhook-node');
 const hook = new Webhook('https://discord.com/api/webhooks/852811715623518238/NfNaO-HMwMtwO5eujrwayga0ijpF39pe20gjNaBjWk31dhT1qxxIMOsG5kPn6orkjQj5');
 const c = require('colors/safe');
-const keepAlive = require('./server/server')
 const request = require("request");
 const inquirer = require('inquirer')
 const rd = require('readline-sync');
